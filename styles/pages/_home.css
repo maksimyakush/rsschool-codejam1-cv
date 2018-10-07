@@ -32,20 +32,29 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 .header__text-box .my-photo {
   height: 10rem;
   border-radius: 10px;
   border: #fff 10px solid;
+  animation: moveInBottom 1s .2s ease backwards;
 }
 
 .header__text-box .my-profession {
   color: #fff;
+  animation: moveInBottom 1s .6s ease backwards;
 }
 
-.main {
-  display: contents;
+.header__text-box .heading-1 {
+  animation: moveInBottom 1s .4s ease backwards;
+
+}
+
+.header .navigation--main {
+  animation: moveInLeft 1s .4s ease backwards;
+
 }
 
 .section-summary {
@@ -66,11 +75,9 @@
 }
 
 .section-skills {
-    /* background-color: yellow; */
     transform: skewY(-3deg);
     border-top:3px solid #3ce78c;
     border-bottom:3px solid #3ce78c;
-
     padding: 10rem 0;
     display: grid;
     grid-column: content-start / content-end;

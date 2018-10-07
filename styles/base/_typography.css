@@ -4,7 +4,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.7;
     color: #000;
-    /* background-color: #efefef; */
+    background-color: #efefef;
 
 }
 
@@ -55,23 +55,19 @@ body {
 
 .heading-3--one {
     padding: 5rem;
-
     background-color: #ffd800;
 }
 
 .heading-3--two {
     padding: 5rem;
-
     background-color: #00deff;
 }
 
 .heading-3--three {
     padding: 5rem;
-
     background-color: #3ce78c;
 }
 
-ul {
-    display: contents;
+.my-profession {
+    font-size: 2rem;
 }
-

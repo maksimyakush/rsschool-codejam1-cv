@@ -1,7 +1,7 @@
 .navigation--main {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: repeat(5, max-content);
+    grid-template-columns: repeat(4, max-content);
     grid-gap: 2rem;
 }
 
