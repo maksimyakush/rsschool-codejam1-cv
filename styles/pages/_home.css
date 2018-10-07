@@ -1,9 +1,11 @@
 .container {
   display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [content-start] repeat(
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [content-start] repeat(
       12,
       [col-start] minmax(min-content, 8rem) [col-end]
-    ) [content-end] minmax(6rem, 1fr) [full-end];
+    )
+    [content-end] minmax(6rem, 1fr) [full-end];
 }
 
 .header {
@@ -11,7 +13,6 @@
   grid-column: full-start / full-end;
   position: relative;
   height: 60vh;
-
   align-content: start;
   padding: 1rem;
   background-image: linear-gradient(
@@ -32,145 +33,97 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .header__text-box .my-photo {
   height: 10rem;
   border-radius: 10px;
   border: #fff 10px solid;
-  animation: moveInBottom 1s .2s ease backwards;
+  animation: moveInBottom 1s 0.2s ease backwards;
 }
 
 .header__text-box .my-profession {
   color: #fff;
-  animation: moveInBottom 1s .6s ease backwards;
+  animation: moveInBottom 1s 0.6s ease backwards;
 }
 
 .header__text-box .heading-1 {
-  animation: moveInBottom 1s .4s ease backwards;
-
+  animation: moveInBottom 1s 0.4s ease backwards;
 }
 
 .header .navigation--main {
-  animation: moveInLeft 1s .4s ease backwards;
-
+  animation: moveInLeft 1s 0.4s ease backwards;
 }
 
 .section-summary {
-    margin-top: -5rem;
-    padding: 15rem 0;
+  margin-top: -5rem;
+  padding: 15rem 0;
   display: grid;
   grid-column: content-start / content-end;
   grid-gap: 3rem;
-
 }
 
 .section-summary__text-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20rem;
-    align-items: center;
-    justify-items: start;
+  grid-gap: 20rem;
+  align-items: center;
+  justify-items: start;
 }
 
 .section-skills {
-    transform: skewY(-3deg);
-    border-top:3px solid #3ce78c;
-    border-bottom:3px solid #3ce78c;
-    padding: 10rem 0;
-    display: grid;
-    grid-column: content-start / content-end;
-    grid-auto-flow: column;
-    text-align: center;
-    grid-gap: 3rem;
-    justify-items: center;
-    align-items: center;
-
+  transform: skewY(-3deg);
+  border-top: 3px solid #3ce78c;
+  border-bottom: 3px solid #3ce78c;
+  padding: 10rem 0;
+  display: grid;
+  grid-column: content-start / content-end;
+  grid-auto-flow: column;
+  text-align: center;
+  grid-gap: 3rem;
+  justify-items: center;
+  align-items: center;
 }
 
 .section-skills__text-box {
-    transform: skewY(3deg);
+  transform: skewY(3deg);
 
-    display: grid;
-    grid-gap: 3rem;
-
+  display: grid;
+  grid-gap: 3rem;
 }
 
 .section-skills__value {
-    border-radius: 50%;
-    height: 20rem;
-    width: 20rem;
-    line-height: 20rem;
-    vertical-align: middle;
-    border: green 3px solid;
-    font-size: 4rem;
-    font-family: "OpenSans";
-    font-weight: bold;
-
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  line-height: 20rem;
+  vertical-align: middle;
+  border: green 3px solid;
+  font-size: 4rem;
+  font-family: "OpenSans";
+  font-weight: bold;
 }
 
 .section-skills__name {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .section-portfolio {
-    padding: 15rem 0;
-    display: grid;
-    grid-column: content-start / content-end;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    grid-gap: 3rem;
-
+  padding: 15rem 0;
+  display: grid;
+  grid-column: content-start / content-end;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 3rem;
 }
 
-.section-portfolio figure {
-    position: relative;
 
-}
-
-.section-portfolio img {
-    box-shadow: 0 1.5rem 4rem rgba(0,0,0, .2);
-    transition: all .5s;
-}
-
-.section-portfolio figure:hover img {
-    filter: blur(3px) brightness(80%);
-}
-
-.section-portfolio figure:hover figcaption {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-}
-
-.section-portfolio img {
-    max-width: 100%;
-}
-
-.section-portfolio a {
-    display: grid;
-}
-
-.section-portfolio figcaption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    text-align: center;
-    opacity: 0;
-    transition: all .5s;
-    backface-visibility: hidden;
-}
 
 .footer {
-    display: grid;
-    grid-gap: 2rem;
-    grid-column: full-start / full-end;
-    background-color: #333;
-    color: #fff;
-    justify-items: center;
-    padding: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-column: full-start / full-end;
+  background-color: #333;
+  color: #fff;
+  justify-items: center;
+  padding: 2rem;
 }
-

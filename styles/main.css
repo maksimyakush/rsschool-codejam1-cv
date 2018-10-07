@@ -2,7 +2,6 @@
 @import "abstracts/mixins.css";
 @import "abstracts/variables.css";
 
-
 @import url("./base/_animations.css");
 @import url("./base/_base.css");
 @import url("./base/_typography.css");
@@ -10,9 +9,7 @@
 
 @import url("./components/_navigation.css");
 @import url("./components/_contacts.css");
-
-
-
+@import url("./components/_portfolio-item.css");
 
 @import url("./pages/_home.css");
 
