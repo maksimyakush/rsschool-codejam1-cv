@@ -8,6 +8,9 @@
 @import url("./base/_typography.css");
 @import url("./base/_utilities.css");
 
+@import url("./components/_navigation.css");
 
-@import "pages/home.css";
+
+
+@import url("./pages/_home.css");
 
