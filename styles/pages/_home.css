@@ -1,0 +1,126 @@
+.container {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [content-start] repeat(
+      12,
+      [col-start] minmax(min-content, 8rem) [col-end]
+    )
+    [content-end] minmax(6rem, 1fr) [full-end];
+}
+
+.header {
+  display: inherit;
+  grid-column: full-start / full-end;
+  position: relative;
+  height: 60vh;
+  align-content: start;
+  padding: 1rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(126, 213, 111, 0.8),
+    rgba(40, 180, 133, 0.8)
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.header .navigation--main {
+  grid-column: content-start / content-end;
+}
+
+.header__text-box {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__text-box .my-photo {
+  height: 10rem;
+  border-radius: 10px;
+  border: #fff 10px solid;
+  animation: moveInBottom 1s 0.2s ease backwards;
+}
+
+.header__text-box .my-profession {
+  color: #fff;
+  animation: moveInBottom 1s 0.6s ease backwards;
+}
+
+.header__text-box .heading-1 {
+  animation: moveInBottom 1s 0.4s ease backwards;
+}
+
+.header .navigation--main {
+  animation: moveInLeft 1s 0.4s ease backwards;
+}
+
+.section-summary {
+  margin-top: -5rem;
+  padding: 15rem 0;
+  display: grid;
+  grid-column: content-start / content-end;
+  grid-gap: 3rem;
+}
+
+.section-summary__text-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15rem;
+  align-items: center;
+  justify-items: start;
+}
+
+.section-skills {
+  transform: skewY(-3deg);
+  border-top: 3px solid #3ce78c;
+  border-bottom: 3px solid #3ce78c;
+  padding: 10rem 0;
+  display: grid;
+  grid-column: content-start / content-end;
+  grid-auto-flow: column;
+  text-align: center;
+  grid-gap: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.section-skills__text-box {
+  transform: skewY(3deg);
+  display: grid;
+  grid-gap: 3rem;
+}
+
+.section-skills__value {
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  line-height: 20rem;
+  vertical-align: middle;
+  border: green 3px solid;
+  font-size: 4rem;
+  font-family: "OpenSans";
+  font-weight: bold;
+}
+
+.section-skills__name {
+  font-size: 2rem;
+}
+
+.section-portfolio {
+  padding: 15rem 0;
+  display: grid;
+  grid-column: content-start / content-end;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+}
+
+.footer {
+  display: grid;
+  grid-gap: 2rem;
+  grid-column: full-start / full-end;
+  background-color: #333;
+  color: #fff;
+  justify-items: center;
+  padding: 2rem;
+}
